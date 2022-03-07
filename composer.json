@@ -1,6 +1,6 @@
 {
   "name": "zysmile/zyeditor-laravel",
-  "description": "php文件管理在线编辑器laravel包",
+  "description": "web版在线代码编辑器laravel扩展包",
   "keywords": [
     "php在线编辑器",
     "web编辑器",
