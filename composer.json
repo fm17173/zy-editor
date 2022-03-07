@@ -2,9 +2,11 @@
   "name": "zysmile/zyeditor-laravel",
   "description": "web版在线代码编辑器laravel扩展包",
   "keywords": [
-    "php在线编辑器",
+    "php在线代码编辑器",
     "web编辑器",
-    "laravel"
+    "laravel在线代码编辑器",
+    "laravel web editor",
+    "php web editor"
   ],
   "license": "GPL-2.0",
   "authors": [
