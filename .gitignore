@@ -1,0 +1,7 @@
+/vendor/
+.idea
+*.iml
+target
+.env
+.git
+/node_modules

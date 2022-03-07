@@ -1,0 +1,36 @@
+{
+  "name": "zysmile/zyeditor-laravel",
+  "description": "php文件管理在线编辑器laravel包哦",
+  "keywords": [
+    "php在线编辑器",
+    "web编辑器",
+    "laravel"
+  ],
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Zy Smile",
+      "email": "151909095@qq.com",
+      "homepage": "http://www.zysmile.com",
+      "role": "Manager"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ZyEditor\\": "src/"
+    },
+    "files": [ "src/helpers.php" ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ZyEditor\\ZyEditorServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
