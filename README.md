@@ -134,6 +134,7 @@
 		├── views   // 前端视图文件
 
 # 使用
+php 版本要求 >= 7.0.0
 -  步骤1：使用   composer require zysmile/zyeditor-laravel  安装本插件包
 
 - 步骤2：发布配置文件：php artisan zyeditor:publish
