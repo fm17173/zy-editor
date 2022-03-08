@@ -5,5 +5,5 @@ Route::group(['middleware' => 'web'], function () {
         ->middleware(\ZyEditor\ConfigMapper::get('middleware_auth') ?? '')
         ->where('dir_path','(.*)')
         ->name('zyeditor.index');
-    Route::get('/zyeditor/file',"\ZyEditor\Core\FileSystem@index");
+    Route::get('/zyeditor/file',"\ZyEditor\Core\FileSystem@index")->middleware(\ZyEditor\ConfigMapper::get('middleware_auth') ?? '');
 });
