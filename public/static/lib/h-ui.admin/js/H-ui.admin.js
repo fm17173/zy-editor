@@ -54,7 +54,7 @@ function Hui_admin_tab(obj){
 		bStopIndex = 0,
 		href = $(obj).attr('data-href'),
 		title = $(obj).attr("data-title"),
-		topWindow = $(window.parent.document),
+		topWindow = $(window.document),
 		show_navLi = topWindow.find("#min_title_list li"),
 		iframe_box = topWindow.find("#iframe_box");
 	//console.log(topWindow);
@@ -88,14 +88,14 @@ function Hui_admin_tab(obj){
 
 /*最新tab标题栏列表*/
 function min_titleList(){
-	var topWindow = $(window.parent.document),
+	var topWindow = $(window.document),
 		show_nav = topWindow.find("#min_title_list"),
 		aLi = show_nav.find("li");
 }
 
 /*创建iframe*/
 function creatIframe(href,titleName){
-	var topWindow=$(window.parent.document),
+	var topWindow=$(window.document),
 		show_nav=topWindow.find('#min_title_list'),
 		iframe_box=topWindow.find('#iframe_box'),
 		iframeBox=iframe_box.find('.show_iframe'),
@@ -148,7 +148,7 @@ function creatIframe(href,titleName){
 
 /*关闭iframe*/
 function removeIframe(){
-	var topWindow = $(window.parent.document),
+	var topWindow = $(window.document),
 		iframe = topWindow.find('#iframe_box .show_iframe'),
 		tab = topWindow.find(".acrossTab li"),
 		showTab = topWindow.find(".acrossTab li.active"),
@@ -162,7 +162,7 @@ function removeIframe(){
 
 /*关闭所有iframe*/
 function removeIframeAll(){
-	var topWindow = $(window.parent.document),
+	var topWindow = $(window.document),
 		iframe = topWindow.find('#iframe_box .show_iframe'),
 		tab = topWindow.find(".acrossTab li");
 	for(var i=0;i<tab.length;i++){

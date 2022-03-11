@@ -47,7 +47,7 @@ $(function () {
                                 msg('正在压缩，请等待。。。',2000,6);
                             }
 
-                            global_downloadByUrl(base_url+'/download_file_or_dir/'+path);
+                            global_downloadByUrl(base_url+'/download_file_or_dir?dir_path='+path);
                         }
                     };
                     delete tmp.create.action;
@@ -190,7 +190,7 @@ $(function () {
             if(node.type === "file"){
                 var file_path = node.id;
                 var file_title = node.text;
-                var url = base_url+'/get_file'+ '/' +file_path;
+                var url = base_url+'/get_file'+ '?file_path='+file_path;
                 // 给标题添加文件路径后缀
                 // var dir_path = getNowSelectDir(false);
                 // if(dir_path){
@@ -262,7 +262,7 @@ function uploadFile(){
         shade: 0,
         maxmin: true,
         offset: '100px',
-        content: base_url+'/show_upload_file/'+dir_path+'/',
+        content: base_url+'/show_upload_file?dir_path='+dir_path,
     });
 }
 

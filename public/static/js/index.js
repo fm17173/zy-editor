@@ -10,7 +10,7 @@ function yaoyao_admin_tab(href, title){
         bStopIndex = 0,
         href = href,
         title = title,
-        topWindow = $(window.parent.document),
+        topWindow = $(window.document),
         show_navLi = topWindow.find("#min_title_list li"),
         iframe_box = topWindow.find("#iframe_box");
     show_navLi.each(function() {

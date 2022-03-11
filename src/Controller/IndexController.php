@@ -19,11 +19,11 @@ class IndexController extends Controller
        define('BASE_DIR', dirname(__DIR__) );
        // App::run();
         $action = $request->a;
-        $dir_path = $request->dir_path;
         if ($request->isMethod('get')) {
             switch ($action) {
                 case 'get_file':
-                    $info = FileSystem::get_file($dir_path);
+                    $route_file_path = $request->file_path;
+                    $info = FileSystem::get_file($route_file_path);
                     $file_path = $info['file_path'];
                     $file_content = $info['file_content'];
                     $file_key = $info['file_key'];
@@ -31,6 +31,7 @@ class IndexController extends Controller
                     return view('zyeditor::file_content',compact('file_path','file_content','file_key','file_info'));
                     break;
                 case 'show_upload_file':
+                    $dir_path = $request->dir_path;
                     return view('zyeditor::upload_file',compact('dir_path'));
                     break;
                 case 'download_file_or_dir':

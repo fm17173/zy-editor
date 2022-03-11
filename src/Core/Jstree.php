@@ -68,7 +68,7 @@ class Jstree
         }
 
         $img = $type;
-        $able_icons = 'php js css ico jpg png jpeg gif bmp text txt md log htaccess htm html xml xsl rb pdf as c iso cf cpp cs sql xls xlsx h crt pem cer ppt pptx doc docx zip gz tar rar fla';
+        $able_icons = 'php js css ico jpg png jpeg gif bmp text txt md log htaccess htm html xml xsl rb pdf as c iso cf cpp cs sql xls xlsx h crt pem cer ppt pptx doc docx zip gz tar rar fla go java env py json vue';
 
         if( strpos($able_icons, $suffix) !== false ){
             $img = 'file-'.$suffix;

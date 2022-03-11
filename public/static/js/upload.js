@@ -93,7 +93,7 @@ function upload_one_file(file_obj,success_fun,error_fun)
     fd.append('a','upload_file');
     fd.append('path',new_path);
     $.ajax({
-        url: base_url+'/upload_file/'+new_path,
+        url: base_url+'/upload_file',
         method: "POST",
         data: fd,
         contentType: false,
