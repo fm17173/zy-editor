@@ -1,7 +1,6 @@
 本项目简介：该项目是是laravel 版本下的在线代码编辑器，实现在浏览器中对服务器代码进行在线编辑和查看。支持 自定义中间件，配置文件，支持laravel 5.5 - laraavel8  版本
 
-# Zyeditor-laravel 扩展包  基于laravel 最新8x版本开发
-
+# Zyeditor-laravel 扩展包  基于laravel 最新8x版本开发欢迎下载使用
 
 # 界面
 ![编辑目录及文件](http://www.zysmile.com/home/images/zyeditor.png "laravel在线代码编辑器扩展包")
