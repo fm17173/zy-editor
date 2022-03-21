@@ -35,6 +35,7 @@ class IndexController extends Controller
                     return view('zyeditor::upload_file',compact('dir_path'));
                     break;
                 case 'download_file_or_dir':
+                    $dir_path = $request->dir_path;
                     FileSystem::$action($dir_path);
                     break;
             }
